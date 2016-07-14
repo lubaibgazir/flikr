@@ -1,0 +1,17 @@
+<div ng-controller="AuthorCtrl">
+	<div ng-show="loading" class="loader"><img src="img/load.gif" /></div>
+	<header>
+		<h1>Public images from author: {{userName}}</h1>
+	</header>
+	<article id="container" ng-init="getServiceList(userId);">
+		<ul class="flickr-imgs">
+			<li ng-repeat="item in feedItems">
+				<a target="_blank" href="{{item.link}}"><img src="{{item.media.m}}" alt="{{item.title}}" /></a>
+				<span class="additional-info">author: {{item.author}}</span>
+			</li>
+		</ul>
+		<div class="lnkFriends">
+			<a ng-click="friends(userId, userName)">Click here to see photos uploaded by <span>{{userName}}'s</span> friends</a>
+		</div>
+	</article>
+</div>

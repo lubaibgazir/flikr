@@ -1,0 +1,21 @@
+{
+  "name": "booom",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "*",
+    "angular-resource": "*",
+    "angular-cookies": "*",
+    "angular-sanitize": "*",
+    "angular-route": "*",
+    "angular-animate": "*",
+    "angular-ui-router": "*",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*",
+    "angular-scenario": "*"
+  },
+  "overrides": {
+
+  }
+}

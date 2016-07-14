@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+}
+
+header {
+  line-height: 50px;
+  padding: 15px 0;
+}
+header h1 {
+  text-align: center;
+  color: #343434;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}

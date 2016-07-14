@@ -1,0 +1,15 @@
+<div ng-controller="FriendsCtrl">
+	<div ng-show="loading" class="loader"><img src="img/load.gif" /></div>
+	<header>
+		<h1>Public images from author {{authorName}}'s friends</h1>
+	</header>
+	<article id="container">
+		<div ng-hide="hasData" class="noData">No data</div>
+		<ul ng-show="hasData" class="flickr-imgs">
+			<li ng-repeat="item in friendsFeedItems">
+				<a target="_blank" href="{{item.link}}"><img src="{{item.media.m}}" alt="{{item.title}}" /></a>
+				<span class="additional-info">author: {{item.author}}</span>
+			</li>
+		</ul>
+	</article>
+</div>

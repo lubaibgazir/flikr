@@ -1,0 +1,14 @@
+<div ng-controller="HomeCtrl">
+	<div ng-show="loading" class="loader"><img src="img/load.gif" /></div>
+	<header>
+		<h1>Public images from flickr</h1>
+	</header>
+	<article id="container" ng-init="getServiceList();">
+		<ul class="flickr-imgs">
+			<li ng-repeat="item in feedItems">
+				<a ng-click="authorDetail(item.author_id)"><img src="{{item.media.m}}" alt="{{item.title}}" /></a>
+				<span class="additional-info"><a target="_blank" href="{{item.link}}">author: {{item.author}}</a></span>
+			</li>
+		</ul>
+	</article>
+</div>
